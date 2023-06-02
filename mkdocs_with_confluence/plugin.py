@@ -34,6 +34,7 @@ class DummyFile(object):
 
 class MkdocsWithConfluence(BasePlugin):
     _id = 0
+    dryrun = True
     config_scheme = (
         ("host_url", config_options.Type(str, default=None)),
         ("space", config_options.Type(str, default=None)),
